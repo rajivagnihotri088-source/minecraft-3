@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite Block World 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading">LOADING 3D WORLD...</div>
+
+  <div id="menu">
+    <h1>INFINITE BLOCK WORLD</h1>
+    <p>Explore • Mine • Build • Survive</p>
+    <button id="play">PLAY WORLD</button>
+    <p>WASD Move | Space Jump | Mouse Look</p>
+    <p>Left Click Mine | Right Click Build | 1-5 Select Block</p>
+  </div>
+
+  <div id="hud">
+    <div id="stats">
+      <b>INFINITE WORLD</b>
+      <div id="position">Position: 0, 0, 0</div>
+      <div id="target">Looking at: None</div>
+      <div id="inventory">Inventory loading...</div>
+      <div id="armor">IRON ARMOR: HELMET · CHESTPLATE · LEGGINGS · BOOTS</div>
+    </div>
+
+    <div id="crosshair">+</div>
+    <div id="notice">Iron tools and armor equipped!</div>
+
+    <div id="hotbar">
+      <button class="slot selected" data-block="grass">1<br>🟩<small>Grass</small></button>
+      <button class="slot" data-block="dirt">2<br>🟫<small>Dirt</small></button>
+      <button class="slot" data-block="stone">3<br>⬜<small>Stone</small></button>
+      <button class="slot" data-block="wood">4<br>🪵<small>Wood</small></button>
+      <button class="slot" data-block="leaves">5<br>🌿<small>Leaves</small></button>
+    </div>
+  </div>
+
+  <div id="error"></div>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
